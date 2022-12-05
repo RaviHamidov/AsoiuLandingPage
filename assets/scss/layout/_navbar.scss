@@ -1,0 +1,342 @@
+/* ===== Google Font Import - Poppins ===== */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    transition: all 0.4s ease;
+}
+
+/* ===== Colours ===== */
+:root {
+    --body-color: #e4e9f7;
+    --nav-color: #4070f4;
+    --side-nav: #010718;
+    --text-color: #fff;
+    --search-bar: #f2f2f2;
+    --search-text: #010718;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 70px;
+    width: 100%;
+    background-color: #fff;
+    z-index: 100;
+}
+
+body.dark nav {
+    border: 1px solid #393838;
+}
+
+nav .nav-bar {
+    height: 100%;
+    background-color: #fff;
+    padding: 0 30px;
+}
+
+nav .nav-bar .sidebarOpen {
+    color: #1a265c;
+    font-size: 25px;
+    padding: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+nav .nav-bar .logo a {
+    font-size: 25px;
+    font-weight: 500;
+    color: #1a265c;
+    text-decoration: none;
+}
+
+.menu .logo-toggle {
+    display: none;
+}
+
+.nav-bar .nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar .nav-links li {
+    margin: 0 5px;
+    list-style: none;
+}
+
+.topNav li a {
+    color: #617eff !important;
+}
+
+.nav-links li a {
+    position: relative;
+    font-size: 17px;
+    font-weight: 400;
+    color: #1a265c;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.nav-bar .darkLight-searchBox {
+    display: flex;
+    align-items: center;
+}
+
+.darkLight-searchBox .dark-light,
+.darkLight-searchBox .searchToggleOne,
+.darkLight-searchBox .searchToggleTwo {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+}
+
+.dark-light i,
+.searchToggleOne i,
+.searchToggleTwo i {
+    position: absolute;
+    color: #1a265c;
+    font-size: 22px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.dark-light i.sun {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.dark-light.active i.sun {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.dark-light.active i.moon {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.searchToggleOne i.cancel {
+    opacity: 0;
+    pointer-events: none;
+}
+.searchToggleTwo i.cancel {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.searchToggleOne.active i.cancel {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.searchToggleTwo.active i.cancel {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.searchToggleOne.active i.search {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.searchToggleTwo.active i.search {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.searchBox {
+    position: relative;
+}
+
+.searchBox .search-field i {
+    color: #1a265c;
+}
+
+.searchBox .search-field {
+    position: absolute;
+    bottom: -85px;
+    right: 5px;
+    height: 50px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 3px;
+    border-radius: 6px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.searchToggleOne.active ~ .search-field {
+    bottom: -70px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.searchToggleTwo.active ~ .search-field {
+    bottom: -74px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.search-field::before {
+    content: "";
+    position: absolute;
+    right: 14px;
+    top: -4px;
+    height: 12px;
+    width: 12px;
+    background-color: #fff;
+    transform: rotate(-45deg);
+    z-index: -1;
+}
+
+.search-field input {
+    height: 100%;
+    width: 100%;
+    padding: 0 45px 0 15px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--search-text);
+    background-color: var(--search-bar);
+}
+
+body.dark .search-field input {
+    color: #1a265c;
+}
+
+.search-field i {
+    position: absolute;
+    color: #fff;
+    right: 15px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+body.dark .search-field i {
+    color: #1a265c;
+}
+
+.sub-menu {
+    display: none;
+}
+
+.withSub li {
+    position: relative;
+}
+
+.withSub li:hover .sub-menu {
+    border-radius: 16px;
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    z-index: 1;
+    background-color: #fff;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.withSub li:hover .sub-menu ul {
+    display: block;
+    margin: 10px;
+    min-width: 230px;
+    width: 100%;
+}
+
+.withSub li:hover .sub-menu ul li {
+    min-width: 230px;
+    width: 100%;
+    padding: 10px;
+    border-bottom: 1px dotted var(--border-color);
+    background: transparent;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    text-align: left;
+}
+
+@media (max-width: 790px) {
+    nav .nav-bar .sidebarOpen {
+        display: block;
+    }
+
+    .menu {
+        position: fixed;
+        height: 100%;
+        width: 320px;
+        right: -100%;
+        top: 0;
+        padding: 20px;
+        background-color: #fff;
+        z-index: 100;
+        transition: all 0.4s ease;
+    }
+
+    nav.active .menu {
+        right: 0%;
+    }
+
+    nav.active .nav-bar .navLogo a {
+        opacity: 0;
+        transition: all 0.3s ease;
+    }
+
+    .menu .logo-toggle {
+        display: block;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo-toggle .sidebarClose {
+        color: #1a265c;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .topNav {
+        border-bottom: 0.6px solid #a4afe5;
+    }
+
+    .nav-bar .nav-links {
+        flex-direction: column;
+    }
+
+    .nav-links li a {
+        display: block;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 790px) {
+    .deskBlock {
+        display: none !important;
+    }
+    .mobBlock {
+        display: block !important;
+    }
+}
+
+@media (min-width: 790px) {
+    .mobBlock {
+        display: none !important;
+    }
+    .deskBlock {
+        display: block !important;
+    }
+}

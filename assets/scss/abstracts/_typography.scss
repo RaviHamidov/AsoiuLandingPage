@@ -1,0 +1,91 @@
+/*=======================================
+           Typography - Start
+=======================================*/
+
+/* ---------- DM Sans - from Google Font ---------- */
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
+
+// Font Familys
+$defaultFamily: "DM Sans", sans-serif;
+
+/* ---------- Font Details ---------- */
+// Font Weights
+$weight-bold: 700;
+$weight-semibold: 600;
+$weight-medium: 500;
+$weight-normal: 400;
+
+// Font Styles
+$style-normal: normal;
+
+// Letter Spacing
+$letter-spacing: 0.05rem;
+
+// Line Heights
+$line-height-primary: 6rem;
+
+// Font Sizes
+$text-root: 10px;
+html {
+    font-size: $text-root;
+}
+
+$text-body: 1.6rem;
+body {
+    font-size: $text-body;
+}
+/* ---------- Header ---------- */
+// 48px 4.8rem 1 h1
+// 26px 2.6rem 6 p
+// 22px 2.2rem 8 li
+// 18px 1.8rem 10 button, a
+
+/* ---------- Advertisement ---------- */
+// 48px 4.8rem 1 h2
+// 28px 2.8rem 5 p
+// 26px 2.6rem 6 span
+
+/* ---------- News ---------- */
+// 26px 2.6rem 6 span
+// 21px 2.1rem 9 p
+// 18px 1.8rem 10 h3
+// 16px 1.6rem 11 span
+
+/* ---------- Degree ---------- */
+// 38px 3.8rem 2 h2
+// 35px 3.5rem 3 span
+
+/* ----------- Quality ---------- */
+// 48px 4.8rem 1 span
+// 38px 3.8rem 2 h2
+// 24px 2.4rem 7 p
+
+/* ---------- Faculty ---------- */
+// 38px 3.8rem 2 h2
+// 35px 3.5rem 3 h3
+// 21px 2.1rem 9 p
+
+/* ---------- FeedBacksGraduates ---------- */
+// 38px 3.8rem 2 h2
+// 32px 3.2rem 4 p
+// 26px 2.6rem 6 h3
+
+/* ---------- Programs ---------- */
+// 38px 3.8rem 2 h2
+// 35px 3.5rem 3 h3
+// 21px 2.1rem 9 p
+
+/* ---------- FeedBacksTeachers ---------- */
+// 38px 3.8rem 2 h2
+// 32px 3.2rem 4 p
+// 26px 2.6rem 6 h3
+
+/* ---------- Partners ---------- */
+// 38px 3.8rem 2 h2
+
+/* ---------- Footer ---------- */
+// 18px 1.8rem 10 li
+
+/*=======================================
+           Typography - End
+=======================================*/

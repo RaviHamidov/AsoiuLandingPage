@@ -1,0 +1,473 @@
+<main class="relative">
+    
+
+    <!-- ########## faculty_section ########## -->
+    <section
+        class="container faculty swiper py-14"
+        style="position: relative; z-index: 0"
+    >
+        <h2
+            class="text-4xl text-left font-semibold leading-10 text-[#1E2782] pb-4"
+        >
+            Fakültələr
+        </h2>
+        <div class="swiper-wrapper">
+            <div
+                style="height: 280px"
+                class="swiper-slide flex flex-col justify-between hover:shadow-lg bg-[#fff] px-8 ease-in duration-300 transition-all rounded-3xl w-4/12 p-4"
+            >
+                <div class="max-h-[160px]">
+                    <img
+                        style="height: 100%"
+                        src="./assets/tools/images/svg/faculty__01.svg"
+                        alt=""
+                    />
+                </div>
+                <div>
+                    <h3 class="font-medium text-3xl leading-10">
+                        Azİİ IT Club
+                    </h3>
+                    <p>
+                        Fakültədə filan sahədə filan bilgilər öyrədilir və
+                        bununla yanaşı filan şeylər edilir.
+                    </p>
+                </div>
+            </div>
+            <div
+                style="height: 280px"
+                class="swiper-slide flex flex-col justify-between hover:shadow-lg bg-[#fff] px-8 ease-in duration-300 transition-all rounded-3xl w-4/12 p-4"
+            >
+                <div class="max-h-[160px]">
+                    <img
+                        style="height: 100%"
+                        src="./assets/tools/images/svg/faculty__02.svg"
+                        alt=""
+                    />
+                </div>
+
+                <div>
+                    <h3 class="font-medium text-3xl leading-10">
+                        SABAH Qrupları
+                    </h3>
+                    <p>
+                        Fakültədə filan sahədə filan bilgilər öyrədilir və
+                        bununla yanaşı filan şeylər edilir.
+                    </p>
+                </div>
+            </div>
+            <div
+                style="height: 280px"
+                class="swiper-slide flex flex-col justify-between hover:shadow-lg bg-[#fff] px-8 ease-in duration-300 transition-all rounded-3xl w-4/12 p-4"
+            >
+                <div class="max-h-[160px]">
+                    <img
+                        style="height: 100%"
+                        src="./assets/tools/images/svg/faculty__03.svg"
+                        alt=""
+                    />
+                </div>
+
+                <div>
+                    <h3 class="font-medium text-3xl leading-10">eazi Start</h3>
+                    <p>
+                        Fakültədə filan sahədə filan bilgilər öyrədilir və
+                        bununla yanaşı filan şeylər edilir.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Initialize Swiper for "faculty_section" -->
+    <script>
+        if (window.screen.width < 768) {
+            var swiper = new Swiper(".faculty", {
+                loop: true,
+                slidesPerView: 2,
+                spaceBetween: 20,
+                updateOnWindowResize: true,
+            });
+        } else {
+            var swiper = new Swiper(".faculty", {
+                loop: true,
+                slidesPerView: 3,
+                spaceBetween: 20,
+                updateOnWindowResize: true,
+            });
+        }
+        swiper.loopFix();
+    </script>
+    <!-- ************** section_end ************** -->
+
+    <!-- ########## graduates_section ########## -->
+    <section
+        style="position: relative; z-index: 0"
+        class="container teachers swiper py-14"
+    >
+        <h2
+            class="text-4xl text-left font-semibold leading-10 text-[#1E2782] pb-4"
+        >
+            Məşhur müəllimlərimiz
+        </h2>
+        <div class="swiper-wrapper">
+            <div
+                class="swiper-slide swipperActive flex justify-center w-6/12 px-16"
+            >
+                <div class="w-6/12">
+                    <img
+                        style="height: 100%"
+                        src="./assets/tools/images/png/graduate__02.png"
+                        alt=""
+                    />
+                </div>
+                <div
+                    class="w-6/12 flex flex-col justify-center items-start relative py-24"
+                >
+                    <div
+                        style="
+                            position: absolute;
+                            content: url('./src/tools/images/png/quote__0.png');
+                            top: 5vh;
+                            left: 0;
+                            z-index: -1;
+                        "
+                    ></div>
+                    <p class="text-4xl leading-9 font-normal text-[#1A265C]">
+                        Mənim üçün bu universitet həyatımın ən doğru seçimi idi.
+                        Mənim üçün bu universitet həyatımın ən doğru seçimi idi.
+                    </p>
+                    <div>
+                        <h3
+                            class="text-3xl leading-8 font-medium text-[#617EFF] mt-10"
+                        >
+                            Filankəs Filankəsov,
+                        </h3>
+                        <span
+                            class="text-2xl leading-8 font-normal text-[#617EFF]"
+                            >Filan şirkətdə Mühəndis</span
+                        >
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide flex justify-center w-6/12 px-16">
+                <div class="w-6/12">
+                    <img
+                        style="height: 100%"
+                        src="./assets/tools/images/png/graduate__01.png"
+                        alt=""
+                    />
+                </div>
+                <div
+                    class="w-6/12 flex flex-col justify-center items-start relative py-24"
+                >
+                    <div
+                        style="
+                            position: absolute;
+                            content: url('./src/tools/images/png/quote__0.png');
+                            top: 5vh;
+                            left: 0;
+                            z-index: -1;
+                        "
+                    ></div>
+                    <p class="text-4xl leading-9 font-normal text-[#1A265C]">
+                        Mənim üçün bu universitet həyatımın ən doğru seçimi idi.
+                        Mənim üçün bu universitet həyatımın ən doğru seçimi idi.
+                    </p>
+                    <div>
+                        <h3
+                            class="text-3xl leading-8 font-medium text-[#617EFF] mt-10"
+                        >
+                            Filankəs Filankəsov,
+                        </h3>
+                        <span
+                            class="text-2xl leading-8 font-normal text-[#617EFF]"
+                            >Filan şirkətdə Mühəndis</span
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Initialize Swiper for "graduates_section" -->
+    <script>
+        if (window.screen.width < 768) {
+            var swiper = new Swiper(".graduates", {
+                loop: true,
+                slidesPerView: 1,
+                spaceBetween: 20,
+                updateOnWindowResize: true,
+            });
+        } else {
+            var swiper = new Swiper(".graduates", {
+                loop: true,
+                slidesPerView: 1,
+                spaceBetween: 20,
+                updateOnWindowResize: true,
+            });
+        }
+        swiper.loopFix();
+    </script>
+    <!-- ************** section_end ************** -->
+
+    <!-- ########## programs_section ########## -->
+    <section
+        style="position: relative; z-index: 0"
+        class="container programs swiper py-14"
+    >
+        <h2
+            class="text-4xl text-left font-semibold leading-10 text-[#1E2782] pb-4"
+        >
+            Önə çıxan proqramlar
+        </h2>
+        <div class="swiper-wrapper">
+            <div
+                style="height: 280px"
+                class="swiper-slide flex flex-col justify-between hover:shadow-lg bg-[#fff] px-8 ease-in duration-300 transition-all rounded-3xl w-4/12 p-4"
+            >
+                <div class="max-h-[160px]">
+                    <img
+                        style="height: 100%"
+                        src="./assets/tools/images/svg/programs__01.svg"
+                        alt=""
+                    />
+                </div>
+                <div>
+                    <h3 class="font-medium text-3xl leading-10">
+                        Azİİ IT Club
+                    </h3>
+                    <p>
+                        Fakültədə filan sahədə filan bilgilər öyrədilir və
+                        bununla yanaşı filan şeylər edilir.
+                    </p>
+                </div>
+            </div>
+            <div
+                style="height: 280px"
+                class="swiper-slide flex flex-col justify-between hover:shadow-lg bg-[#fff] px-8 ease-in duration-300 transition-all rounded-3xl w-4/12 p-4"
+            >
+                <div class="max-h-[160px]">
+                    <img
+                        style="height: 100%"
+                        src="./assets/tools/images/svg/programs__02.svg"
+                        alt=""
+                    />
+                </div>
+
+                <div>
+                    <h3 class="font-medium text-3xl leading-10">
+                        SABAH Qrupları
+                    </h3>
+                    <p>
+                        Fakültədə filan sahədə filan bilgilər öyrədilir və
+                        bununla yanaşı filan şeylər edilir.
+                    </p>
+                </div>
+            </div>
+            <div
+                style="height: 280px"
+                class="swiper-slide flex flex-col justify-between hover:shadow-lg bg-[#fff] px-8 ease-in duration-300 transition-all rounded-3xl w-4/12 p-4"
+            >
+                <div class="max-h-[160px]">
+                    <img
+                        style="height: 100%"
+                        src="./assets/tools/images/svg/programs__03.svg"
+                        alt=""
+                    />
+                </div>
+
+                <div>
+                    <h3 class="font-medium text-3xl leading-10">eazi Start</h3>
+                    <p>
+                        Fakültədə filan sahədə filan bilgilər öyrədilir və
+                        bununla yanaşı filan şeylər edilir.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Initialize Swiper for "programs_section" -->
+    <script>
+        if (window.screen.width < 768) {
+            var swiper = new Swiper(".programs", {
+                loop: true,
+                slidesPerView: 2,
+                spaceBetween: 20,
+                updateOnWindowResize: true,
+            });
+        } else {
+            var swiper = new Swiper(".programs", {
+                loop: true,
+                slidesPerView: 3,
+                spaceBetween: 20,
+                updateOnWindowResize: true,
+            });
+        }
+        swiper.loopFix();
+    </script>
+    <!-- ************** section_end ************** -->
+
+    <!-- ########## teachers_section ########## -->
+    <section
+        style="position: relative; z-index: 0"
+        class="container teachers swiper py-14"
+    >
+        <h2
+            class="text-4xl text-left font-semibold leading-10 text-[#1E2782] pb-4"
+        >
+            Məşhur müəllimlərimiz
+        </h2>
+        <div class="swiper-wrapper">
+            <div
+                class="swiper-slide swipperActive flex justify-center w-6/12 px-16"
+            >
+                <div class="w-6/12">
+                    <img
+                        style="height: 100%"
+                        src="./assets/tools/images/png/graduate__02.png"
+                        alt=""
+                    />
+                </div>
+                <div
+                    class="w-6/12 flex flex-col justify-center items-start relative py-24"
+                >
+                    <div
+                        style="
+                            position: absolute;
+                            content: url('./src/tools/images/png/quote__0.png');
+                            top: 5vh;
+                            left: 0;
+                            z-index: -1;
+                        "
+                    ></div>
+                    <p class="text-4xl leading-9 font-normal text-[#1A265C]">
+                        Mənim üçün bu universitet həyatımın ən doğru seçimi idi.
+                        Mənim üçün bu universitet həyatımın ən doğru seçimi idi.
+                    </p>
+                    <div>
+                        <h3
+                            class="text-3xl leading-8 font-medium text-[#617EFF] mt-10"
+                        >
+                            Filankəs Filankəsov,
+                        </h3>
+                        <span
+                            class="text-2xl leading-8 font-normal text-[#617EFF]"
+                            >Filan şirkətdə Mühəndis</span
+                        >
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide flex justify-center w-6/12 px-16">
+                <div class="w-6/12">
+                    <img
+                        style="height: 100%"
+                        src="./assets/tools/images/png/graduate__01.png"
+                        alt=""
+                    />
+                </div>
+                <div
+                    class="w-6/12 flex flex-col justify-center items-start relative py-24"
+                >
+                    <div
+                        style="
+                            position: absolute;
+                            content: url('./src/tools/images/png/quote__0.png');
+                            top: 5vh;
+                            left: 0;
+                            z-index: -1;
+                        "
+                    ></div>
+                    <p class="text-4xl leading-9 font-normal text-[#1A265C]">
+                        Mənim üçün bu universitet həyatımın ən doğru seçimi idi.
+                        Mənim üçün bu universitet həyatımın ən doğru seçimi idi.
+                    </p>
+                    <div>
+                        <h3
+                            class="text-3xl leading-8 font-medium text-[#617EFF] mt-10"
+                        >
+                            Filankəs Filankəsov,
+                        </h3>
+                        <span
+                            class="text-2xl leading-8 font-normal text-[#617EFF]"
+                            >Filan şirkətdə Mühəndis</span
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Initialize Swiper for "teachers_section" -->
+    <script>
+        if (window.screen.width < 768) {
+            var swiper = new Swiper(".teachers", {
+                loop: true,
+                slidesPerView: 1,
+                spaceBetween: 20,
+                updateOnWindowResize: true,
+            });
+        } else {
+            var swiper = new Swiper(".teachers", {
+                loop: true,
+                slidesPerView: 1,
+                spaceBetween: 20,
+                updateOnWindowResize: true,
+            });
+        }
+        swiper.loopFix();
+    </script>
+    <!-- ************** section_end ************** -->
+
+    <!-- ########## partner_section ########## -->
+    <section
+        style="position: relative; z-index: 0"
+        class="container partners swiper py-14"
+    >
+        <h2
+            class="text-4xl text-left font-semibold leading-10 text-[#1E2782] pb-4"
+        >
+            Partnyorlarımız
+        </h2>
+        <div class="swiper-wrapper">
+            <div
+                class="swiper-slide hover:shadow-lg hover:shadow-[#888] hover:bg-[#fff] px-8 opacity-60 hover:opacity-100 ease-in duration-300 transition-all rounded-3xl w-4/12 h-full h-[23vh] p-4"
+            >
+                <div
+                    class="w-full h-full bg-[url('./assets/tools/images/svg/partner__01.svg')] bg-contain bg-no-repeat bg-center"
+                ></div>
+            </div>
+            <div
+                class="swiper-slide hover:shadow-lg hover:shadow-[#888] hover:bg-[#fff] px-8 opacity-60 hover:opacity-100 ease-in duration-300 transition-all rounded-3xl w-4/12 h-full h-[23vh] p-4"
+            >
+                <div
+                    class="w-full h-full bg-[url('./assets/tools/images/svg/partner__02.svg')] bg-contain bg-no-repeat bg-center"
+                ></div>
+            </div>
+            <div
+                class="swiper-slide hover:shadow-lg hover:shadow-[#888] hover:bg-[#fff] px-8 opacity-60 hover:opacity-100 ease-in duration-300 transition-all rounded-3xl w-4/12 h-full h-[23vh] p-4"
+            >
+                <div
+                    class="w-full h-full bg-[url('./assets/tools/images/svg/partner__03.svg')] bg-contain bg-no-repeat bg-center"
+                ></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Initialize Swiper for "partner_section" -->
+    <script>
+        if (window.screen.width < 768) {
+            var swiper = new Swiper(".partners", {
+                loop: true,
+                slidesPerView: 2,
+                spaceBetween: 20,
+                updateOnWindowResize: true,
+            });
+        } else {
+            var swiper = new Swiper(".partners", {
+                loop: true,
+                slidesPerView: 4,
+                spaceBetween: 20,
+                updateOnWindowResize: true,
+            });
+        }
+        swiper.loopFix();
+    </script>
+    <!-- ************** section_end ************** -->
+</main>

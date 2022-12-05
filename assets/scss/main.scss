@@ -1,18 +1,29 @@
 /*=======================================
-                 Base 
+                 Base =>
 =======================================*/
 @import "./base/reset";
-@import "./base/typography";
-@import "./base/colors";
 
 /*=======================================
-                 Layout
+                 Abstracts =>
 =======================================*/
-@import "./layout/header";
+@import "./abstracts/typography";
+@import "./abstracts/colors";
+
+/*=======================================
+                 Layout =>
+=======================================*/
+@import "./layout/main";
 @import "./layout/navbar";
 @import "./layout/footer";
 
 /*=======================================
-                 Components
+                 Components =>
 =======================================*/
-@import "./components/card";
+@import "./components/advertisement";
+@import "./components/news";
+@import "./components/carousel";
+
+/*=======================================
+                 Effects =>
+=======================================*/
+@import "./effects/selection";

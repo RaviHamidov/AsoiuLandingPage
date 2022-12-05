@@ -1,0 +1,16 @@
+/*=======================================
+            TextSelection - Start
+=======================================*/
+::-moz-selection {
+  /* Code for Firefox */
+  color: #3e5bdb;
+  background: #dfe3f6;
+}
+
+::selection {
+  color: #3e5bdb;
+  background: #dfe3f6;
+}
+/*=======================================
+            TextSelection - End
+=======================================*/
