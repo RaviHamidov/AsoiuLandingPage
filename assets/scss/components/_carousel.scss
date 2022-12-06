@@ -31,6 +31,8 @@
 
     .carousel-inner {
         .carousel-item {
+            position: relative;
+            height: 100vh;
             .carousel-item-image {
                 position: relative;
                 width: 100%;
@@ -58,6 +60,7 @@
 
             .carousel-caption {
                 text-align: left;
+                transform: translate(0%, -50%);
 
                 h1 {
                     font-family: $defaultFamily;

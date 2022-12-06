@@ -69,16 +69,22 @@
                 data-bs-ride="carousel"
             >
                 <!-- header-navbar -->
-                <nav>
+                <nav id="scrollEffect">
                     <div
                         class="nav-bar position-relative container mx-auto d-flex align-items-center justify-content-between"
                     >
-                        <span class="logo navLogo">
+                        <a href="#" class="d-flex align-items-center">
                             <img
-                                src="./assets/tools/images/svg/logo__01.svg"
-                                alt=""
+                                class="defaultLogo"
+                                src="./assets/tools/images/png/logo__01.png"
+                                alt="Your browser don't support this image"
                             />
-                        </span>
+                            <img
+                                class="scrollLogo d-none"
+                                src="./assets/tools/images/png/logo__02.png"
+                                alt="Your browser don't support this image"
+                            />
+                        </a>
 
                         <div class="flex">
                             <div class="menu">
@@ -86,7 +92,7 @@
                                     <span class="logo">
                                         <img
                                             src="./assets/tools/images/svg/logo__01.svg"
-                                            alt=""
+                                            alt="Your browser don't support this image"
                                         />
                                     </span>
                                     <i class="bx bx-x sidebarClose"></i>
@@ -276,7 +282,7 @@
 
                             <div class="darkLight-searchBox mobBlock">
                                 <div class="searchBox">
-                                    <div class="searchToggleTwo">
+                                    <div class="searchToggleTwo scrollColor">
                                         <i class="bx bx-x cancel"></i>
                                         <i class="bx bx-search search"> </i>
                                     </div>
@@ -291,7 +297,7 @@
                                 </div>
                             </div>
 
-                            <i class="bx bx-menu sidebarOpen"></i>
+                            <i class="bx bx-menu sidebarOpen scrollColor"></i>
                         </div>
                     </div>
                 </nav>
@@ -329,6 +335,7 @@
                         <img
                             class="carousel-item-image"
                             src="./assets/tools/images/png/slide__02.png"
+                            alt="Your browser don't support this image"
                         />
                         <div class="carousel-item-overlay"></div>
                         <div class="carousel-caption">
@@ -350,6 +357,7 @@
                         <img
                             class="carousel-item-image"
                             src="./assets/tools/images/png/slide__02.png"
+                            alt="Your browser don't support this image"
                         />
                         <div class="carousel-item-overlay"></div>
                         <div class="carousel-caption">
@@ -372,6 +380,7 @@
                         <img
                             class="carousel-item-image"
                             src="./assets/tools/images/png/slide__02.png"
+                            alt="Your browser don't support this image"
                         />
                         <div class="carousel-item-overlay"></div>
                         <div class="carousel-caption">
@@ -553,7 +562,7 @@
                                     <img
                                         src="./assets/tools/images/png/news__06.png"
                                         class="news__cta__frame--date--image"
-                                        alt=""
+                                        alt="Your browser don't support this image"
                                     />
                                     <div class="news__cta__frame--date--info">
                                         <h3
@@ -583,7 +592,7 @@
                                     <img
                                         src="./assets/tools/images/png/news__06.png"
                                         class="news__cta__frame--date--image"
-                                        alt=""
+                                        alt="Your browser don't support this image"
                                     />
                                     <div class="news__cta__frame--date--info">
                                         <h3
@@ -613,7 +622,7 @@
                                     <img
                                         src="./assets/tools/images/png/news__06.png"
                                         class="news__cta__frame--date--image"
-                                        alt=""
+                                        alt="Your browser don't support this image"
                                     />
                                     <div class="news__cta__frame--date--info">
                                         <h3
@@ -643,7 +652,7 @@
                                     <img
                                         src="./assets/tools/images/png/news__06.png"
                                         class="news__cta__frame--date--image"
-                                        alt=""
+                                        alt="Your browser don't support this image"
                                     />
                                     <div class="news__cta__frame--date--info">
                                         <h3
@@ -692,7 +701,7 @@
                                     <img
                                         src="./assets/tools/images/png/news__03.png"
                                         class="news__cta__frame--date--image"
-                                        alt=""
+                                        alt="Your browser don't support this image"
                                     />
                                     <div class="news__cta__frame--date--info">
                                         <h3
@@ -722,7 +731,7 @@
                                     <img
                                         src="./assets/tools/images/png/news__03.png"
                                         class="news__cta__frame--date--image"
-                                        alt=""
+                                        alt="Your browser don't support this image"
                                     />
                                     <div class="news__cta__frame--date--info">
                                         <h3
@@ -752,7 +761,7 @@
                                     <img
                                         src="./assets/tools/images/png/news__03.png"
                                         class="news__cta__frame--date--image"
-                                        alt=""
+                                        alt="Your browser don't support this image"
                                     />
                                     <div class="news__cta__frame--date--info">
                                         <h3
@@ -782,7 +791,7 @@
                                     <img
                                         src="./assets/tools/images/png/news__03.png"
                                         class="news__cta__frame--date--image"
-                                        alt=""
+                                        alt="Your browser don't support this image"
                                     />
                                     <div class="news__cta__frame--date--info">
                                         <h3
@@ -827,14 +836,14 @@
                         Akademik dərəcələr
                     </h2>
                     <div class="container flex flex-wrap">
-                        <div class="col-lg-4 col-md-6 col-sm-12 p-2">
+                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 p-2">
                             <div
                                 class="flex flex-col justify-center items-center py-4 bg-[#fff] hover:bg-[#FFB200] rounded-3xl transition ease-linear delay-100"
                             >
                                 <img
                                     class="text-[#617EFF]"
                                     src="./assets/tools/images/svg/degree__01.svg"
-                                    alt=""
+                                    alt="Your browser don't support this image"
                                 />
                                 <span
                                     class="font-medium text-3xl text-[#617EFF] leading-10"
@@ -842,14 +851,14 @@
                                 >
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 p-2">
+                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 p-2">
                             <div
                                 class="flex flex-col justify-center items-center py-4 bg-[#fff] hover:bg-[#FFB200] rounded-3xl transition ease-linear delay-100"
                             >
                                 <img
                                     class="text-[#617EFF]"
                                     src="./assets/tools/images/svg/degree__01.svg"
-                                    alt=""
+                                    alt="Your browser don't support this image"
                                 />
                                 <span
                                     class="font-medium text-3xl text-[#617EFF] leading-10"
@@ -857,14 +866,14 @@
                                 >
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 p-2">
+                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 p-2">
                             <div
                                 class="flex flex-col justify-center items-center py-4 bg-[#fff] hover:bg-[#FFB200] rounded-3xl transition ease-linear delay-100"
                             >
                                 <img
                                     class="text-[#617EFF]"
                                     src="./assets/tools/images/svg/degree__01.svg"
-                                    alt=""
+                                    alt="Your browser don't support this image"
                                 />
                                 <span
                                     class="font-medium text-3xl text-[#617EFF] leading-10"
@@ -891,7 +900,7 @@
                         >
                             <img
                                 src="./assets/tools/images/svg/illustrations__01.svg"
-                                alt=""
+                                alt="Your browser don't support this image"
                             />
                             <h1
                                 class="text-2xl text-[#1A265C] py-2 font-normal leading-7 px-14"
@@ -927,7 +936,7 @@
                         >
                             <img
                                 src="/assets/tools/images/svg/illustrations__02.svg"
-                                alt=""
+                                alt="Your browser don't support this image"
                             />
                             <h1
                                 class="text-2xl text-[#1A265C] py-2 font-normal leading-7 px-14"
@@ -963,7 +972,7 @@
                         >
                             <img
                                 src="/assets/tools/images/svg/illustrations__03.svg"
-                                alt=""
+                                alt="Your browser don't support this image"
                             />
                             <h1
                                 class="text-2xl text-[#1A265C] py-2 font-normal leading-7 px-14"
@@ -999,7 +1008,7 @@
                         >
                             <img
                                 src="/assets/tools/images/svg/illustrations__04.svg"
-                                alt=""
+                                alt="Your browser don't support this image"
                             />
                             <h1
                                 class="text-2xl text-[#1A265C] py-2 font-normal leading-7 px-14"
@@ -1056,7 +1065,7 @@
                             <img
                                 style="height: 100%"
                                 src="./assets/tools/images/svg/faculty__01.svg"
-                                alt=""
+                                alt="Your browser don't support this image"
                             />
                         </div>
                         <div>
@@ -1077,7 +1086,7 @@
                             <img
                                 style="height: 100%"
                                 src="./assets/tools/images/svg/faculty__01.svg"
-                                alt=""
+                                alt="Your browser don't support this image"
                             />
                         </div>
                         <div>
@@ -1098,7 +1107,7 @@
                             <img
                                 style="height: 100%"
                                 src="./assets/tools/images/svg/faculty__02.svg"
-                                alt=""
+                                alt="Your browser don't support this image"
                             />
                         </div>
 
@@ -1120,7 +1129,7 @@
                             <img
                                 style="height: 100%"
                                 src="./assets/tools/images/svg/faculty__03.svg"
-                                alt=""
+                                alt="Your browser don't support this image"
                             />
                         </div>
 
@@ -1156,7 +1165,7 @@
                             <img
                                 style="height: 100%"
                                 src="./assets/tools/images/png/graduate__02.png"
-                                alt=""
+                                alt="Your browser don't support this image"
                             />
                         </div>
                         <div
@@ -1172,7 +1181,7 @@
                                 "
                             ></div>
                             <p
-                                class="text-4xl text-center md:text-left leading-9 font-normal text-[#1A265C]"
+                                class="text-4xl leading-9 font-normal text-[#1A265C]"
                             >
                                 Mənim üçün bu universitet həyatımın ən doğru
                                 seçimi idi. Mənim üçün bu universitet həyatımın
@@ -1198,7 +1207,7 @@
                             <img
                                 style="height: 100%"
                                 src="./assets/tools/images/png/graduate__02.png"
-                                alt=""
+                                alt="Your browser don't support this image"
                             />
                         </div>
                         <div
@@ -1214,7 +1223,7 @@
                                 "
                             ></div>
                             <p
-                                class="text-4xl text-center md:text-left leading-9 font-normal text-[#1A265C]"
+                                class="text-4xl leading-9 font-normal text-[#1A265C]"
                             >
                                 Mənim üçün bu universitet həyatımın ən doğru
                                 seçimi idi. Mənim üçün bu universitet həyatımın
@@ -1256,7 +1265,7 @@
                             <img
                                 style="height: 100%"
                                 src="./assets/tools/images/svg/programs__01.svg"
-                                alt=""
+                                alt="Your browser don't support this image"
                             />
                         </div>
                         <div>
@@ -1277,7 +1286,7 @@
                             <img
                                 style="height: 100%"
                                 src="./assets/tools/images/svg/programs__02.svg"
-                                alt=""
+                                alt="Your browser don't support this image"
                             />
                         </div>
 
@@ -1299,7 +1308,7 @@
                             <img
                                 style="height: 100%"
                                 src="./assets/tools/images/svg/programs__03.svg"
-                                alt=""
+                                alt="Your browser don't support this image"
                             />
                         </div>
 
@@ -1335,7 +1344,7 @@
                             <img
                                 style="height: 100%"
                                 src="./assets/tools/images/png/graduate__02.png"
-                                alt=""
+                                alt="Your browser don't support this image"
                             />
                         </div>
                         <div
@@ -1351,7 +1360,7 @@
                                 "
                             ></div>
                             <p
-                                class="text-4xl text-center md:text-left leading-9 font-normal text-[#1A265C]"
+                                class="text-4xl leading-9 font-normal text-[#1A265C]"
                             >
                                 Mənim üçün bu universitet həyatımın ən doğru
                                 seçimi idi. Mənim üçün bu universitet həyatımın
@@ -1377,7 +1386,7 @@
                             <img
                                 style="height: 100%"
                                 src="./assets/tools/images/png/graduate__02.png"
-                                alt=""
+                                alt="Your browser don't support this image"
                             />
                         </div>
                         <div
@@ -1393,7 +1402,7 @@
                                 "
                             ></div>
                             <p
-                                class="text-4xl text-center md:text-left leading-9 font-normal text-[#1A265C]"
+                                class="text-4xl leading-9 font-normal text-[#1A265C]"
                             >
                                 Mənim üçün bu universitet həyatımın ən doğru
                                 seçimi idi. Mənim üçün bu universitet həyatımın
@@ -1469,7 +1478,7 @@
                         <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
                             <img
                                 src="./assets/tools/images/png/logo__03.png"
-                                alt=""
+                                alt="Your browser don't support this image"
                             />
                             <p
                                 style="color: #3e5bdb"
@@ -1659,6 +1668,7 @@
             crossorigin="anonymous"
         ></script>
         <script src="./assets/js/script.js"></script>
+        <script src="./assets/js/scrollEffect.js"></script>
         <script src="./assets/js/advertisement.js"></script>
         <script src="./assets/js/news.js"></script>
         <script src="./assets/js/faculty.js"></script>
