@@ -72,6 +72,7 @@
                     color: $color-primary-default;
                 }
                 p {
+                    margin: 1rem 0 0 0;
                     font-family: $defaultFamily;
                     font-style: $style-normal;
                     font-weight: $weight-normal;
@@ -79,6 +80,34 @@
                     line-height: 3.1rem;
                     letter-spacing: -0.0008em;
                     color: $color-primary-default;
+                }
+                a {
+                    margin: 2rem 0 0 0;
+                    display: inline-block;
+                    padding: 16px 18px;
+                    gap: 10px;
+
+                    min-width: 173px;
+                    min-height: 54px;
+
+                    background: linear-gradient(
+                        95.56deg,
+                        #ffb200 0%,
+                        #ffd148 100%
+                    );
+                    border-radius: 15px;
+
+                    font-family: $defaultFamily;
+                    font-style: $style-normal;
+                    font-weight: $weight-normal;
+                    font-size: 1.8rem;
+                    line-height: 2.2rem;
+                    letter-spacing: -0.0008em;
+                    color: $color-secondary-dark;
+
+                    i {
+                        margin-left: 0.5rem;
+                    }
                 }
             }
         }
@@ -96,3 +125,69 @@
 /*=======================================
             Carousel - End
 =======================================*/
+
+@media (max-width: 576px) {
+    .carousel {
+        .carousel-indicators {
+            button {
+                width: 10px !important;
+                height: 10px !important;
+                background: #f3f5fc;
+                border-radius: 50%;
+                border: 0 !important;
+                transition: all ease 1s;
+                -webkit-transition: all ease 1s;
+                -moz-transition: all ease 1s;
+                -ms-transition: all ease 1s;
+                -o-transition: all ease 1s;
+            }
+            .active {
+                width: 45px !important;
+                height: 10px !important;
+                background: #f3f5fc;
+                border-radius: 15px;
+                border: 0 !important;
+                transition: all ease 1s;
+                -webkit-transition: all ease 1s;
+                -moz-transition: all ease 1s;
+                -ms-transition: all ease 1s;
+                -o-transition: all ease 1s;
+            }
+        }
+
+        .carousel-inner {
+            .carousel-item {
+                position: relative;
+                height: 100vh;
+
+                .carousel-caption {
+                    text-align: left;
+                    transform: translate(0%, -50%);
+
+                    h1 {
+                        font-family: $defaultFamily;
+                        font-style: $style-normal;
+                        font-weight: $weight-semibold;
+                        font-size: 2.4rem;
+                        line-height: 2.9rem;
+                        letter-spacing: -0.0008em;
+                        color: $color-primary-default;
+                    }
+                    p {
+                        font-family: $defaultFamily;
+                        font-style: $style-normal;
+                        font-weight: $weight-normal;
+                        font-size: 1.6rem;
+                        line-height: 1.9rem;
+                        letter-spacing: -0.0008em;
+                        color: $color-primary-default;
+                    }
+                }
+            }
+        }
+        .carousel-control-next-icon,
+        .carousel-control-prev-icon {
+            display: none;
+        }
+    }
+}

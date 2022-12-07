@@ -23,7 +23,7 @@ nav {
     position: fixed;
     top: 0;
     left: 0;
-    min-height: 70px;
+    min-height: 140px;
     width: 100%;
     background: transparent; // scroll white
     z-index: 100;
@@ -34,10 +34,18 @@ nav {
     display: flex;
     align-items: center;
 
+    .topNav {
+        li {
+            a {
+                color: #617EFF !important;
+            }
+        }
+    }
+
     .nav-links {
         li {
             a {
-                color: #1e2782 !important;
+                color: #1e2782 ;
             }
         }
     }
@@ -66,7 +74,7 @@ nav .nav-bar {
     height: 100%;
     background: transparent; // scroll white
     padding: 0 30px;
-    min-height: 70px;
+    min-height: 140px;
 }
 
 nav .nav-bar .sidebarOpen {
@@ -98,6 +106,33 @@ nav .nav-bar .logo a {
     list-style: none;
 }
 
+@media (max-width: 790px) {
+    nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        min-height: 70px !important;
+        width: 100%;
+        background: transparent; // scroll white
+        z-index: 100;
+    }
+    nav .nav-bar {
+        height: 100%;
+        background: transparent; // scroll white
+        padding: 0 30px;
+        min-height: 70px !important;
+    }
+}
+
+@media (min-width: 790px) {
+    .withSub li {
+        padding: 14px 20px;
+    }
+
+    .nav-links {
+        margin-top: 1rem;
+    }
+}
 .topNav li a {
     color: #fff !important; // scroll #617eff
 }
@@ -309,6 +344,14 @@ body.dark .search-field i {
     text-align: left;
 }
 
+.withSub li:hover a i {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+
 @media (max-width: 790px) {
     nav .nav-bar .sidebarOpen {
         display: block;
@@ -317,13 +360,35 @@ body.dark .search-field i {
     .menu {
         position: fixed;
         height: 100%;
-        width: 320px;
+        width: 100%;
         right: -100%;
         top: 0;
         padding: 20px;
         background-color: #fff;
         z-index: 100;
         transition: all 0.4s ease;
+
+        .topNav {
+            li {
+                a {
+                    color: #617EFF !important;
+                }
+            }
+        }
+    
+        .nav-links {
+            li {
+                a {
+                    color: #1e2782 ;
+                }
+            }
+        }
+        .scrollColor {
+            color: #1e2782 !important;
+            i {
+                color: #1e2782 !important;
+            }
+        }
     }
 
     nav.active .menu {
@@ -340,7 +405,7 @@ body.dark .search-field i {
         width: 100%;
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: flex-end;
     }
 
     .logo-toggle .sidebarClose {

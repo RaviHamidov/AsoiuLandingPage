@@ -118,6 +118,12 @@ body {
   object-position: 0 0;
 }
 
+@media (max-width: 768px) {
+  .swiper-button-prev,
+.swiper-button-next {
+    display: none !important;
+  }
+}
 /* ===== Google Font Import - Poppins ===== */
 * {
   margin: 0;
@@ -141,7 +147,7 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
-  min-height: 70px;
+  min-height: 140px;
   width: 100%;
   background: transparent;
   z-index: 100;
@@ -152,8 +158,11 @@ nav {
   display: flex;
   align-items: center;
 }
+.scrollEffect .topNav li a {
+  color: #617EFF !important;
+}
 .scrollEffect .nav-links li a {
-  color: #1e2782 !important;
+  color: #1e2782;
 }
 .scrollEffect .scrollColor {
   color: #1e2782 !important;
@@ -178,7 +187,7 @@ nav .nav-bar {
   height: 100%;
   background: transparent;
   padding: 0 30px;
-  min-height: 70px;
+  min-height: 140px;
 }
 
 nav .nav-bar .sidebarOpen {
@@ -210,6 +219,31 @@ nav .nav-bar .logo a {
   list-style: none;
 }
 
+@media (max-width: 790px) {
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 70px !important;
+    width: 100%;
+    background: transparent;
+    z-index: 100;
+  }
+  nav .nav-bar {
+    height: 100%;
+    background: transparent;
+    padding: 0 30px;
+    min-height: 70px !important;
+  }
+}
+@media (min-width: 790px) {
+  .withSub li {
+    padding: 14px 20px;
+  }
+  .nav-links {
+    margin-top: 1rem;
+  }
+}
 .topNav li a {
   color: #fff !important;
 }
@@ -422,6 +456,14 @@ body.dark .search-field i {
   text-align: left;
 }
 
+.withSub li:hover a i {
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
+
 @media (max-width: 790px) {
   nav .nav-bar .sidebarOpen {
     display: block;
@@ -429,13 +471,25 @@ body.dark .search-field i {
   .menu {
     position: fixed;
     height: 100%;
-    width: 320px;
+    width: 100%;
     right: -100%;
     top: 0;
     padding: 20px;
     background-color: #fff;
     z-index: 100;
     transition: all 0.4s ease;
+  }
+  .menu .topNav li a {
+    color: #617EFF !important;
+  }
+  .menu .nav-links li a {
+    color: #1e2782;
+  }
+  .menu .scrollColor {
+    color: #1e2782 !important;
+  }
+  .menu .scrollColor i {
+    color: #1e2782 !important;
   }
   nav.active .menu {
     right: 0%;
@@ -449,7 +503,7 @@ body.dark .search-field i {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
   }
   .logo-toggle .sidebarClose {
     color: #1a265c;
@@ -730,6 +784,7 @@ body.dark .search-field i {
   color: #ffffff;
 }
 .carousel .carousel-inner .carousel-item .carousel-caption p {
+  margin: 1rem 0 0 0;
   font-family: "DM Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -737,6 +792,26 @@ body.dark .search-field i {
   line-height: 3.1rem;
   letter-spacing: -0.0008em;
   color: #ffffff;
+}
+.carousel .carousel-inner .carousel-item .carousel-caption a {
+  margin: 2rem 0 0 0;
+  display: inline-block;
+  padding: 16px 18px;
+  gap: 10px;
+  min-width: 173px;
+  min-height: 54px;
+  background: linear-gradient(95.56deg, #ffb200 0%, #ffd148 100%);
+  border-radius: 15px;
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  letter-spacing: -0.0008em;
+  color: #1a265c;
+}
+.carousel .carousel-inner .carousel-item .carousel-caption a i {
+  margin-left: 0.5rem;
 }
 .carousel .carousel-control-next-icon,
 .carousel .carousel-control-prev-icon {
@@ -751,6 +826,62 @@ body.dark .search-field i {
 /*=======================================
             Carousel - End
 =======================================*/
+@media (max-width: 576px) {
+  .carousel .carousel-indicators button {
+    width: 10px !important;
+    height: 10px !important;
+    background: #f3f5fc;
+    border-radius: 50%;
+    border: 0 !important;
+    transition: all ease 1s;
+    -webkit-transition: all ease 1s;
+    -moz-transition: all ease 1s;
+    -ms-transition: all ease 1s;
+    -o-transition: all ease 1s;
+  }
+  .carousel .carousel-indicators .active {
+    width: 45px !important;
+    height: 10px !important;
+    background: #f3f5fc;
+    border-radius: 15px;
+    border: 0 !important;
+    transition: all ease 1s;
+    -webkit-transition: all ease 1s;
+    -moz-transition: all ease 1s;
+    -ms-transition: all ease 1s;
+    -o-transition: all ease 1s;
+  }
+  .carousel .carousel-inner .carousel-item {
+    position: relative;
+    height: 100vh;
+  }
+  .carousel .carousel-inner .carousel-item .carousel-caption {
+    text-align: left;
+    transform: translate(0%, -50%);
+  }
+  .carousel .carousel-inner .carousel-item .carousel-caption h1 {
+    font-family: "DM Sans", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+    letter-spacing: -0.0008em;
+    color: #ffffff;
+  }
+  .carousel .carousel-inner .carousel-item .carousel-caption p {
+    font-family: "DM Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    letter-spacing: -0.0008em;
+    color: #ffffff;
+  }
+  .carousel .carousel-control-next-icon,
+.carousel .carousel-control-prev-icon {
+    display: none;
+  }
+}
 /*=======================================
                  Effects =>
 =======================================*/

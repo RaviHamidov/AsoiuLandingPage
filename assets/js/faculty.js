@@ -3,10 +3,6 @@ var swiper = new Swiper(".faculty", {
     slidesPerView: 1,
     spaceBetween: 20,
     updateOnWindowResize: true,
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
 
     // Responsive breakpoints
     breakpoints: {
