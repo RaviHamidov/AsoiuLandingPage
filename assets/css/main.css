@@ -159,7 +159,7 @@ nav {
   align-items: center;
 }
 .scrollEffect .topNav li a {
-  color: #617EFF !important;
+  color: #617eff !important;
 }
 .scrollEffect .nav-links li a {
   color: #1e2782;
@@ -169,6 +169,16 @@ nav {
 }
 .scrollEffect .scrollColor i {
   color: #1e2782 !important;
+}
+.scrollEffect .dark-light i,
+.scrollEffect .searchToggleOne i,
+.scrollEffect .searchToggleTwo i {
+  position: absolute;
+  color: #1a265c;
+  font-size: 2.2rem;
+  line-height: 2.6rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .noneLogo {
@@ -288,7 +298,8 @@ nav .nav-bar .logo a {
 .searchToggleTwo i {
   position: absolute;
   color: #fff;
-  font-size: 1.8rem;
+  font-size: 2.2rem;
+  line-height: 2.6rem;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -480,7 +491,7 @@ body.dark .search-field i {
     transition: all 0.4s ease;
   }
   .menu .topNav li a {
-    color: #617EFF !important;
+    color: #617eff !important;
   }
   .menu .nav-links li a {
     color: #1e2782;
@@ -628,6 +639,28 @@ body.dark .search-field i {
   font-size: 50px;
 }
 
+@media (max-width: 768px) {
+  .advertisement__heading {
+    color: #1a265c;
+    font-family: "DM Sans", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: -0.0008em;
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+    margin: 0 0 1rem 0;
+  }
+  .advertisement__description {
+    color: #3046a8;
+    font-family: "DM Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    letter-spacing: -0.0008em;
+    opacity: 0.6;
+  }
+}
 .news__header__nav {
   display: flex;
   justify-content: space-between;

@@ -37,7 +37,7 @@ nav {
     .topNav {
         li {
             a {
-                color: #617EFF !important;
+                color: #617eff !important;
             }
         }
     }
@@ -45,7 +45,7 @@ nav {
     .nav-links {
         li {
             a {
-                color: #1e2782 ;
+                color: #1e2782;
             }
         }
     }
@@ -55,6 +55,17 @@ nav {
         i {
             color: #1e2782 !important;
         }
+    }
+
+    .dark-light i,
+    .searchToggleOne i,
+    .searchToggleTwo i {
+        position: absolute;
+        color: #1a265c;
+        font-size: 2.2rem;
+        line-height: 2.6rem;
+        cursor: pointer;
+        transition: all 0.3s ease;
     }
 }
 
@@ -177,7 +188,8 @@ nav .nav-bar .logo a {
 .searchToggleTwo i {
     position: absolute;
     color: #fff; //scroll #1a265c;
-    font-size: 1.8rem;
+    font-size: 2.2rem;
+    line-height: 2.6rem;
     cursor: pointer;
     transition: all 0.3s ease;
 }
@@ -371,15 +383,15 @@ body.dark .search-field i {
         .topNav {
             li {
                 a {
-                    color: #617EFF !important;
+                    color: #617eff !important;
                 }
             }
         }
-    
+
         .nav-links {
             li {
                 a {
-                    color: #1e2782 ;
+                    color: #1e2782;
                 }
             }
         }
