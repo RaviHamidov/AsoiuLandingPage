@@ -1,0 +1,92 @@
+.header {
+    .overlayForHeader {
+        position: relative;
+        top: 0;
+        height: 40vh;
+        width: 100%;
+        text-align: center;
+        // padding-top: 100px;
+        color: white;
+        overflow: hidden;
+        background-position: center center;
+        background: #c04848; /* fallback for old browsers */
+        background: linear-gradient(
+                311.85deg,
+                rgba(26, 38, 92, 0.65) 30.35%,
+                rgba(255, 178, 0, 0.4875) 224.05%
+            ),
+            url("../tools/images/png/bg__04.jpeg"); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(
+                311.85deg,
+                rgba(26, 38, 92, 0.65) 30.35%,
+                rgba(255, 178, 0, 0.4875) 224.05%
+            ),
+            url("../tools/images/png/bg__04.jpeg"); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__title {
+        font-family: $defaultFamily;
+        font-style: $style-normal;
+        font-weight: $weight-semibold;
+        font-size: 5.4rem;
+        line-height: 7.4rem;
+        text-align: center;
+        color: #ffffff;
+    }
+}
+
+.contact {
+    &__info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+
+        h3 {
+            font-family: $defaultFamily;
+            font-style: $style-normal;
+            font-weight: $weight-semibold;
+            font-size: 3.8rem;
+            line-height: 4.6rem;
+            text-align: center;
+            color: #1a265c;
+        }
+        p {
+            color: #a4afe5;
+
+            i {
+                color: #3e5bdb;
+            }
+
+            span {
+                color: #3e5bdb;
+            }
+        }
+    }
+
+    &__social {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        h3 {
+            font-family: $defaultFamily;
+            font-style: $style-normal;
+            font-weight: $weight-semibold;
+            font-size: 3.8rem;
+            line-height: 4.6rem;
+            text-align: center;
+            color: #1a265c;
+        }
+    }
+}
