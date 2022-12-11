@@ -47,8 +47,8 @@
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
-        margin-top: 5rem;
-        margin-bottom: 5rem;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
 
         h3 {
             font-family: $defaultFamily;
@@ -58,12 +58,22 @@
             line-height: 4.6rem;
             text-align: center;
             color: #1a265c;
+            margin-bottom: 30px;
         }
         p {
+            display: flex;
+            align-items: center;
             color: #a4afe5;
 
-            i {
-                color: #3e5bdb;
+            font-family: $defaultFamily;
+            font-style: $style-normal;
+            font-weight: $weight-normal;
+            font-size: 1.9rem;
+            line-height: 2.2rem;
+            text-align: center;
+
+            img {
+                margin: 0 10px 0 0;
             }
 
             span {
@@ -77,8 +87,9 @@
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
-        margin-top: 5rem;
-        margin-bottom: 5rem;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+
         h3 {
             font-family: $defaultFamily;
             font-style: $style-normal;
@@ -87,6 +98,124 @@
             line-height: 4.6rem;
             text-align: center;
             color: #1a265c;
+            margin-bottom: 30px;
+        }
+
+        &--list {
+            div div:nth-child(1) a {
+                background: linear-gradient(
+                        0deg,
+                        rgba(0, 0, 0, 0.05),
+                        rgba(0, 0, 0, 0.05)
+                    ),
+                    linear-gradient(98.64deg, #d62976 1.38%, #fa7e1e 98.29%);
+            }
+
+            div div:nth-child(2) a {
+                background: linear-gradient(
+                        0deg,
+                        rgba(0, 0, 0, 0.05),
+                        rgba(0, 0, 0, 0.05)
+                    ),
+                    linear-gradient(98.64deg, #0e76a8 1.38%, #1191cf 98.29%);
+            }
+
+            div div:nth-child(3) a {
+                background: linear-gradient(
+                        0deg,
+                        rgba(0, 0, 0, 0.05),
+                        rgba(0, 0, 0, 0.05)
+                    ),
+                    linear-gradient(98.64deg, #293dd6 1.38%, #1ea9fa 98.29%);
+            }
+
+            div div:nth-child(4) a {
+                background: linear-gradient(
+                        0deg,
+                        rgba(0, 0, 0, 0.05),
+                        rgba(0, 0, 0, 0.05)
+                    ),
+                    linear-gradient(98.64deg, #00acee 1.38%, #57d0ff 98.29%);
+            }
+
+            a {
+                display: flex;
+                align-items: center;
+                background-blend-mode: multiply, normal;
+                box-shadow: 0px 4px 20px rgba(240, 78, 35, 0.25);
+                border-radius: 20px;
+                color: $color-primary-default;
+                padding: 17px 20px;
+                margin: 5px 0;
+                max-width: 260px;
+
+                font-family: $defaultFamily;
+                font-style: $style-normal;
+                font-weight: $weight-normal;
+                font-size: 1.9rem;
+                line-height: 2.2rem;
+                text-align: center;
+                letter-spacing: -0.0008em;
+
+                /* Blue/BG 4 */
+
+                color: #f3f5fc;
+
+                i {
+                    margin: 0 10px 0 0;
+                }
+            }
+        }
+    }
+
+    &__adress {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        h3 {
+            font-family: $defaultFamily;
+            font-style: $style-normal;
+            font-weight: $weight-semibold;
+            font-size: 3.8rem;
+            line-height: 4.6rem;
+            text-align: center;
+            color: #1a265c;
+            margin-bottom: 30px;
+        }
+        p {
+            display: flex;
+            align-items: center;
+            color: #3e5bdb;
+
+            font-family: $defaultFamily;
+            font-style: $style-normal;
+            font-weight: $weight-normal;
+            font-size: 1.9rem;
+            line-height: 2.2rem;
+            text-align: center;
+
+            img {
+                margin: 0 10px 0 0;
+            }
+
+            span {
+                font-weight: $weight-semibold;
+                color: #3e5bdb;
+            }
+        }
+
+        iframe {
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+            border-radius: 2rem;
+            -webkit-border-radius: 2rem;
+            -moz-border-radius: 2rem;
+            -ms-border-radius: 2rem;
+            -o-border-radius: 2rem;
+            min-height: 400px;
         }
     }
 }
