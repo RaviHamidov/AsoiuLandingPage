@@ -576,6 +576,9 @@ body.dark .search-field i {
   color: #ffffff;
 }
 
+.contact {
+  background: #f3f5fc;
+}
 .contact__info {
   display: flex;
   flex-direction: column;
@@ -709,6 +712,102 @@ body.dark .search-field i {
   -ms-border-radius: 2rem;
   -o-border-radius: 2rem;
   min-height: 400px;
+}
+
+.about {
+  background: #f3f5fc;
+}
+.about__content h3 {
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 3.8rem;
+  line-height: 4.6rem;
+  color: #1a265c;
+  margin: 20px 0;
+}
+.about__content p {
+  color: #1a265c;
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.9rem;
+  line-height: 2.2rem;
+  margin-bottom: 20px;
+}
+.about__content img {
+  max-width: 924px;
+}
+.about__content--frame {
+  border-radius: 15px !important;
+  margin: 5vh 0;
+}
+.about__content--frame .table {
+  filter: drop-shadow(0px 10px 60px rgba(48, 70, 168, 0.15));
+  border-radius: 15px !important;
+}
+.about__content--frame .table thead {
+  background: #1a265c;
+  border-radius: 15px 15px 0px 0px;
+  color: #ffffff;
+}
+.about__content--frame .table thead tr th {
+  border: 1px solid #fff;
+  padding: 14px;
+  color: #fff;
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.9rem;
+  line-height: 2.2rem;
+  margin-bottom: 20px;
+}
+.about__content--frame .table tbody tr td {
+  border: 1px solid #1a265c;
+  padding: 14px;
+  color: #1a265c;
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.9rem;
+  line-height: 2.2rem;
+  margin-bottom: 20px;
+}
+.about__content--frame .table tbody tr:nth-child(2n-1) {
+  background-color: #dfe3f6;
+}
+.about__content--frame .table tbody tr:nth-child(2n) {
+  background-color: #fff;
+}
+.about__parts {
+  padding: 22px;
+  background: #ffffff;
+  border-radius: 20px;
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.8rem;
+  line-height: 3.4rem;
+  color: #1a265c;
+  margin: 20px 0;
+}
+.about__parts ul li {
+  padding: 14px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.about__parts ul li span {
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  color: #1a265c;
+}
+.about__parts ul li i {
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  color: #1a265c;
 }
 
 /*=======================================
